@@ -191,7 +191,7 @@ section {
 
 .about .row .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: #6b6b6b;
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
@@ -452,7 +452,7 @@ section {
 
 /* Media Queries Begins */
 
-@media (max-width:991px) {
+@media only screen and (max-width:991px) {
     html {
         font-size: 55%;
     }
@@ -486,7 +486,7 @@ section {
 }
 
 
-@media (max-width:768px) {
+@media only screen and (max-width:768px) {
     header .fa-bars {
         display: block;
     }
@@ -547,7 +547,19 @@ section {
 }
 
 
-@media (max-width:450px) {
+@media only screen and (max-width: 576px) {
+    .icon-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .icon {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:450px) {
     html {
         font-size: 50%;
     }
